@@ -32,7 +32,7 @@
 }
 #tagline {
     font-size: 1.6rem;
-    padding-left: 30px;
+    padding-left: 6rem;
     font-weight: 700;
 
 }
@@ -120,7 +120,197 @@
     font-weight: 800;
 }
 
-@media only screen and (max-width: 700px) {
+body{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.categories, .Introduction-section{
+    margin-top: 5px;
+    box-shadow: 0 2px 6px -3px #F9C74F;
+}
+.categories ,.icons a ,.Introduction-section .textBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.categories .icons{
+    margin-top: 5px;
+}
+.icons a img ,.icons a p{
+    align-self: center;
+    font-size: 1.7em;
+    text-decoration: none;
+}
+.icons a img{
+    height: 60px;
+}
+.icons a{
+    width: fit-content;
+    margin: 5px;
+    transition: transform .2s;
+    color: rgb(44, 44, 44);
+}
+.icons a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    transform: scale(1.2);
+    color: #F3722C;
+}
+.Introduction-section {
+    position: relative;
+    padding: 3%;
+}
+.Introduction-section::before{
+    content: '';
+    background-image: url(bgImg/books-1204029.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+
+}
+.textBox > h1 p {
+    color: brown;
+    font-size : medium;
+}
+.Introduction-section h1 , .Introduction-section p{
+    position: relative;
+    color: #F94144;
+    
+}
+.staffReading{
+    margin-top: -20px;
+}
+.staffReading-1{
+    display: none;
+}
+.slider img{
+    padding: 15%;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+.slider a{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+    text-decoration: none;
+    color:rgb(44, 44, 44) ;
+}
+.slider a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    transform: scale(1.1);
+    color: #F3722C;
+}
+.quoteSlider{
+    background-image: linear-gradient(to bottom right ,#F9C74F ,#F3722C);
+    color: white;
+    margin-bottom: 10px;
+}
+/* .quoteSlider .carousel-item p{
+    font-size: 1em;
+} */
+.quoteSlider .carousel-inner{
+    padding: 10%;
+    justify-self: center;
+    margin: auto;
+    /* font-style: italic; */
+}
+
+/* footer */
+.footer-main-div{
+    width: 100%;
+    height : auto; 
+    margin-top: -10px;
+    background : #F9C74F;
+    /* background : #F3722C; */
+    padding : 20px 0;
+  
+  }
+  .footer-social-icons {
+    width: 100%;
+    height: auto;
+    margin : auto;
+  
+  } 
+  .footer-social-icons ul{
+    
+    margin : 0px;
+    padding : 0px;
+    text-align: center;
+  }
+  .footer-social-icons ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin : 0px 10px;
+    border-radius: 100%;
+    background: #F3722C;
+    
+  }
+  .footer-social-icons:hover {
+      color: brown;
+  }
+  .footer-social-icons ul li a{
+    color : #F9C74F;
+    font-size: 25px;
+  
+  }
+  .footer-social-icons ul li a i{
+    line-height: 50px;
+  }
+  
+@media only screen and (min-width: 768px){
+
+    .categories .icons {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .staffReading{
+        display: none;
+    }
+    .staffReading-1{
+        display: initial;
+        padding: 5%;
+    }
+    .staffReading-1 a{
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        text-decoration: none;
+        color:rgb(44, 44, 44) ;
+    }
+    .staffReading-1 .card-body a:hover{
+        cursor: pointer;
+        text-decoration: none;
+        transform: scale(1.1);
+    }
+    .quoteSlider p{
+        font-size: 1.5em;
+    }
+    .Introduction-section .textBox h1{
+        font-size: 5em;
+    }
+    .Introduction-section .textBox p{
+        font-size: 2.5em;
+    }
+    .footer-main-div{
+        margin-top:-50px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
     .icons > .icon  {
         padding : 1rem;
         font-size:medium;
