@@ -1,0 +1,147 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    background : #F9C74F;
+}
+
+.icons > .icon {
+    list-style: none;
+    padding : 2rem 2rem;
+    font-size: x-large;
+    color: #F9844A;
+    transition: 1s;
+} 
+.icons > .icon:hover {
+   color : brown;
+   transition : 1s ease-in-out;
+   font-size: xx-large;
+   transform: translate(0, -5px);
+}
+.icons {
+    display: flex;
+    justify-content: space-around ;
+}
+
+.tagline {
+    margin-top : 40px;
+    color: brown;
+    font-size: 44rem;
+}
+#tagline {
+    font-size: 1.6rem;
+    padding-left: 30px;
+    font-weight: 700;
+
+}
+.logo {
+    margin-top : -20px;
+    margin-left : -35px
+}
+.team-area > .aaa {
+    text-decoration: none;
+    color: #333;
+}
+.team-area{
+    /* list-style: none;
+    text-decoration: none; */
+    padding : 125px 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    margin :20px;
+    font-size: 15px;
+  
+}
+.single-img {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    width: 525px;
+    height: 350px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+    overflow: hidden;
+    transform : translate(0,0);
+    transition : .3s;
+    margin-top : -80px
+}
+
+.single-img:hover {
+    transform : translate(0 , -1px);
+
+}
+.img-one {
+    background-image: url('assets/review\ \(1\).png');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-two {
+    background-image: url('assets/review\ \(2\).png');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-text {
+    background: #F9C74F;
+    opacity: .9;
+    padding: 0 10px 5px 10px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    transform: translate(0, 110px);
+    line-height: 25px;
+    transition: 1s ease-in-out;
+    display: inline-block;
+
+}
+.img-text p i {
+    padding-right: 20px;
+
+}
+.img-text h4{
+    line-height: 10px;
+    padding: 0;
+    margin: 26px 0;
+    font-family: big john;
+}
+.single-img:hover .img-text{
+    transform: translate(0,0);
+    /* transition: 1 ease-in-out; */
+}
+
+.stars {
+    color: red;
+}
+.heading {
+    color: brown;
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 700px) {
+    .icons > .icon  {
+        padding : 1rem;
+        font-size:medium;
+        
+    }
+    #tagline {
+        font-size: .9rem;
+        padding-left: 25px;
+       
+  }
+  .logo {
+      height: 70px;
+      margin-top: -5px;
+      padding-left: 20px;
+  } 
+  .team-area {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      
+    
+  }
+  
+}
