@@ -6,12 +6,6 @@
     justify-content: space-between;
     background : #F9C74F;
 }
-.heading {
-  font-weight: 600;
-  color : #F9844A;
-  margin-top : -20px;
-  margin-bottom: -20px;
-  text-shadow: 2px 2px grey;
 }
 .icons > .icon {
     list-style: none;
@@ -35,6 +29,9 @@
     margin-top : 40px;
     color: brown;
     font-size: 44rem;
+  text-shadow: 2px 2px whitesmoke;
+  font-weight: 600;
+  text-transform : uppercase;
 }
 #tagline {
     font-size: 1.6rem;
