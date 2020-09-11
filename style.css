@@ -6,7 +6,13 @@
     justify-content: space-between;
     background : #F9C74F;
 }
-
+.heading {
+  font-weight: 600;
+  color : #F9844A;
+  margin-top : -20px;
+  margin-bottom: -20px;
+  text-shadow: 2px 2px grey;
+}
 .icons > .icon {
     list-style: none;
     padding : 2rem 2rem;
