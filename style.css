@@ -7,6 +7,24 @@
     background : #F9C74F;
 }
 }
+/* .icons > .icon {
+    list-style: none;
+    padding : 2rem 2rem;
+    font-size: x-large;
+    color: #F9844A;
+    transition: 1s;
+} 
+.icons > .icon:hover {
+   color : brown;
+   transition : 1s ease-in-out;
+   font-size: xx-large;
+   transform: translate(0, -5px);
+}
+.icons {
+    display: flex;
+    justify-content: space-around ;
+} */
+
 .icons > .icon {
     list-style: none;
     padding : 2rem 2rem;
